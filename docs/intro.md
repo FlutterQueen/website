@@ -3,15 +3,30 @@ title: Introduction
 sidebar_position: 1
 ---
 
-## Queen 👑
+# Motivation 👑
 
-**collection of packages to boost the productivty and make flutter devlopemnt easier with many features out of the box 🎁**
+### **As a Flutter developer most of the features you build in your apps is the same**
 
-# Features
+### **Queen will provide these features and more in single solution**
 
-- [x] validation
-- [x] localization
-- [ ] state managment (pre-built blocs)
-- [ ] loggers
-- [ ] error handling
-- [ ] ui
+# The Goal
+
+- **standard architecture between projects**
+- **productive environment**
+- **maintainable projects**
+- **easy to use features out of the box**
+- **take care of the redundant features which lets you focus more on the requirements**
+
+# Installation
+
+activate the CLI
+
+```
+pub global activate lighthouse
+```
+
+to create a new queen project run
+
+```
+lh init
+```

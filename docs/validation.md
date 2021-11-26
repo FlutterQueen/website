@@ -3,6 +3,31 @@ title: validation
 sidebar_position: 2
 ---
 
+- [variable validation](#variable-validation)
+  - [list of available functions](#list-of-available-functions)
+- [Form validation](#form-validation)
+  - [Validate Forms](#validate-forms)
+  - [list of available Rules](#list-of-available-rules)
+  - [Localize the rule error message](#localize-the-rule-error-message)
+    - [its localized out of the box if you are using nations](#its-localized-out-of-the-box-if-you-are-using-nations)
+    - [override the error message](#override-the-error-message)
+- [notes](#notes)
+
+# variable validation
+
+use a function to validate any variable and it will return a `bool` based on the input
+
+```dart
+const badEmail = 'QueenRoyal.kingdom';
+print(isEmail(badEmail)) // false
+
+const validEmail = 'Queen@Royal.kingdom';
+print(isEmail(validEmail)) // true
+
+```
+
+## [list of available functions](https://pub.dev/documentation/queen_validators/latest/queen_validators/queen_validators-library.html#functions)
+
 # Form validation
 
 just like the flutter says to do with forms queen do it in the same way just take the burden of the validation logic from you
@@ -27,35 +52,18 @@ return TextFormField(
   }
 ```
 
-# variables validation
+## [list of available Rules](https://pub.dev/documentation/queen_validators/latest/queen_validators/queen_validators-library.html#classes)
 
-```dart
-const badEmail = 'QueenRoyal.kingdom';
-print(isEmail(badEmail)) // false
+## Localize the rule error message
 
-const validEmail = 'Queen@Royal.kingdom';
-print(isEmail(validEmail)) // true
+### its localized out of the box if you are using nations
 
-```
+### override the error message
 
-# [Click to Open Supported Rules List](https://pub.dev/documentation/queen_validators/latest/queen_validators/queen_validators-library.html)
+- the recommended way to do so is by overriding the rule key in your `assets/lang` folder
+- or by extending the rule and override the key to whatever you want
 
-# NOTES
+# notes
 
 - some rules takes the failure message as optional param like `IsDateMilli`
-- almost 99% of the rules has a function to validate the varables and have a rules for forms
-
-# Rules
-
-## Text
-
-| Rule          | Function               | Description                             | trims | Notes                       |
-| ------------- | ---------------------- | --------------------------------------- | ----- | --------------------------- |
-| `Contains`    | -                      | if input contains some some value       | ✔     | --------------------------- |
-| `NotContains` | -                      | if input NOT contains the some value    | ✔     | --------------------------- |
-| `IsEmpty`     | `isEmpty(String)`      | if input is empty                       | ✔     | --------------------------- |
-| `IsNotEmpty`  | `isNotEmpty(String)`   | if input is not empty                   | ✔     | --------------------------- |
-| `IsRequired`  | -                      | --------------------------------------- | ✔     | identical with `IsNotEmpty` |
-| `Match`       | `match(Object,Object)` | if two inputs is the same type && value | -     | --------------------------- |
-| `MaxLength`   | -                      | if input length <= max                  | ✔     | --------------------------- |
-| `MinLength`   | -                      | if input length >= min                  | ✔     | --------------------------- |
+- almost 99% of the rules has a function to validate the variables and have a rules for forms
