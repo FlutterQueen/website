@@ -8,13 +8,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
     title: "Flutter Queen",
     tagline: "Queen Support for Flutter framework",
-    url: "https://flutterqueen.github.io/docs",
-    baseUrl: "/",
+    url: "https://flutterqueen.github.io",
+    baseUrl: "/website/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
     organizationName: "FlutterQueen", // Usually your GitHub org/user name.
-    projectName: "docs", // Usually your repo name.
+    projectName: "website", // Usually your repo name.
 
     presets: [
         [
