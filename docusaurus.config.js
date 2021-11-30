@@ -9,7 +9,7 @@ const config = {
     title: "Flutter Queen",
     tagline: "Queen Support for Flutter framework",
     url: "https://flutterqueen.github.io/docs",
-    baseUrl: "/",
+    baseUrl: "/docs",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
