@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Queen 👑",
+    title: "Flutter Queen",
     tagline: "Queen Support for Flutter framework",
     url: "https://your-docusaurus-test-site.com",
     baseUrl: "/",
@@ -55,7 +55,7 @@ const config = {
                 },
                 { to: "/blog", label: "Blog", position: "left" },
                 {
-                    href: "https://github.com/facebook/docusaurus",
+                    href: "https://github.com/FlutterQueen/queen",
                     label: "GitHub",
                     position: "right",
                 },
@@ -75,16 +75,13 @@ const config = {
                     title: "Community",
                     items: [{
                             label: "Stack Overflow",
-                            href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                            href: "https://stackoverflow.com/questions/tagged/queen",
                         },
-                        {
-                            label: "Discord",
-                            href: "https://discordapp.com/invite/docusaurus",
-                        },
-                        {
-                            label: "Twitter",
-                            href: "https://twitter.com/docusaurus",
-                        },
+
+                        // {
+                        //     label: "Twitter",
+                        //     href: "https://twitter.com/docusaurus",
+                        // },
                     ],
                 },
                 {
@@ -95,12 +92,12 @@ const config = {
                         },
                         {
                             label: "GitHub",
-                            href: "https://github.com/facebook/docusaurus",
+                            href: "https://github.com/FlutterQueen/queen",
                         },
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+            copyright: `Copyright © ${new Date().getFullYear()} FlutterQueen .`,
         },
         prism: {
             theme: lightCodeTheme,
