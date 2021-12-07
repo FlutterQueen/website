@@ -24,13 +24,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
+          editUrl: "https://github.com/FlutterQueen",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/main/website/blog/",
+          editUrl: "https://github.com/FlutterQueen",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -57,7 +56,7 @@ const config = {
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/FlutterQueen/queen",
+            href: "https://github.com/FlutterQueen",
             label: "GitHub",
             position: "right",
           },

@@ -38,7 +38,15 @@ set your assets in `assets/lang` and name the file in the language name or code 
         /es.json
 ```
 
-and make sure to call `Nations.boot()` before using `runApp()`
+- and make sure to call `Nations.boot()` before using `runApp()`
+- wrap your app in `NationsBuilder`
+
+  ```dart
+       runApp(
+             NationsBuilder( builder: (ctx) => const MaterialApp(),
+             ),
+  );
+  ```
 
 # translation
 
