@@ -5,21 +5,42 @@ sidebar_position: 2
 
 # **`assets`**
 
-the LH can make help with assets by validating and generating files for your project
+the `LightHouse` will help you working with `assets` in your project .
 
-# **`make`** command
+## `assets:add`
 
+no more forgotten paths in `pubspec.yaml`
+
+use the command `assets:add` to add all files inside `assets` folder to pubspec.yaml
+
+### Notes
+
+- this will skip files that starts with `.` aka hidden files
+- this will remove previously added paths to assets tag in `pubspec.yaml`
+
+## `assets:make`
+
+no more wrong paths or paths that cant be used in the app
+
+writing the path directly in the widget could create some problems
+
+- the path is not valid might be wrong or not exist
+- might use a path and you forgot to add it to `pubspec.yaml`
+
+use the command `assets:make` to make a `Dart` class to help you work with it to provider
+
+- auto-complete
+- strong type to the path
+- `Deprecated` warnings to tell you that you are using bad path
+
+**BEFORE ::**
+
+```dart
+Image.assets('assets/photos/dark_logo.png)
 ```
-lh assets:make
+
+**AFTER ::**
+
+```dart
+Image.assets(Assets.photos.darkLogo)
 ```
-
-will do the following:
-
-- checks if the assets is un-useable (you forgot to add the assets to your project pubspec.yaml)
-- if is un-usable to will mark the generated file as `Deprecated`
-- generate a `Assets` class holding all the keys (path to your asset)
-- the `TR` file will contains comments for each key with the type of the file
-  - ```dart
-     ///  mp3
-          static String get sound => 'assets/sound.mp3';
-    ```

@@ -24,12 +24,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/FlutterQueen",
+          editUrl: "https://github.com/FlutterQueen/website/tree/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/FlutterQueen",
+          editUrl: "https://github.com/FlutterQueen/website/tree/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -42,7 +42,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Queen 👑",
+        title: "Queen",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
@@ -54,7 +54,6 @@ const config = {
             position: "left",
             label: "Tutorial",
           },
-          // { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/FlutterQueen",
             label: "GitHub",
@@ -82,20 +81,11 @@ const config = {
                 label: "Stack Overflow",
                 href: "https://stackoverflow.com/questions/tagged/queen",
               },
-
-              // {
-              //     label: "Twitter",
-              //     href: "https://twitter.com/docusaurus",
-              // },
             ],
           },
           {
             title: "More",
             items: [
-              // {
-              //     label: "Blog",
-              //     to: "/blog",
-              // },
               {
                 label: "GitHub",
                 href: "https://github.com/FlutterQueen/queen",

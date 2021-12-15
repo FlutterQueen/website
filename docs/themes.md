@@ -5,24 +5,21 @@ sidebar_position: 3
 
 # Get Started
 
-queen support multiple themes out of the box in just 3 lines of code
+queen support multiple themes out of the box in just `TWO` steps
 
-# Pros
-
-- zero configuration
-- persist the last theme and loads it on startup automatically
-- rebuild the app on theme changes
-
-# Config
+## Config
 
 - inside config folder create theme file `theme.dart`
 - extend `QThemeConfig`
 - create your own themes list
 
-# booting
+## booting
 
-in your main function before `runApp` call `QTheme.boot(config)` and pass your config
-now your app support multiple themes
+inside the `main` function pass the theme config to the `boot` function
+
+```dart
+FlutterQueen.boot(themeConfig:AppThemeConfig());
+```
 
 # switching between themes
 

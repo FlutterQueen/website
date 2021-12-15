@@ -8,11 +8,13 @@ sidebar_position: 1
 make sure dart path is in you system environment
 
 ```
-<flutter-path>\bin\cache\dart-sdk\bin
+{flutter-path}\bin\cache\dart-sdk\bin
 ```
 
-```
+then run the command :
+
+```bash
 pub global activate lighthouse
 ```
 
-now you can use the lighthouse .
+now you can use the lighthouse with `lighthouse` or `lh` .

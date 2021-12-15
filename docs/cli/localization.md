@@ -3,24 +3,21 @@ title: LH - localization
 sidebar_position: 3
 ---
 
-# **`tr`**
+# **`localization`**
 
-the LH can make localization better by validating and generating files for your project
+the `LightHouse` will help you with localization in your project .
 
-# **`make`** command
+## **`tr:make`**
 
-```
-lh tr:make
-```
+this command will validate your localization assets from `assets/lang` in your project
 
-will do the following:
+### benefits
 
-- checks if the any key is missing
-- checks id any key is empty
-- generate a `TR` file holding all the keys
-- the `TR` file will contains comments for each key
-  - ```dart
-     ///  `ar` => `التاريخ`
-    ///   `en` => `date`
-          static String get date => 'date';
-    ```
+- validation lighthouse will check if you added an empty value or missed a key in any language .
+- strong type checking to your translations keys no more key not found 🎁.
+- IDE support to see the value of this key in different languages.
+  - ![Tr getter](./../assets/snippets/tr_getter.png)
+
+## **`tr:validate`**
+
+this command will validate only your assets and will not generate or update any thing in you project

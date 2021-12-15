@@ -5,29 +5,49 @@ import styles from "./HomepageFeatures.module.css";
 const FeatureList = [
   {
     title: "Easy to Use",
-    Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
-      <>
-        Queen was designed to make app development simpler, more readable and
-        easier to work with.{" "}
-      </>
-    ),
+    Svg: require("../../static/img/logo.svg").default,
+    description: <>Designed to make app development simpler,easier, faster </>,
   },
   {
     title: "Focus on What Matters",
-    Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
-    description: <> Queen lets you focus on Your app more on business logic </>,
+    Svg: require("../../static/img/logo.svg").default,
+    description: (
+      <>
+        lets you focus on Your app requirements and on business logic more not
+        the redundant features
+      </>
+    ),
   },
   {
     title: "Powered by Flutter",
-    Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("../../static/img/logo.svg").default,
     description: (
       <>
-        {" "}
-        under the hood queen is just a collection of packages built to work
-        together{" "}
+        under the hood it is just a collection of packages that works together
       </>
     ),
+  },
+  {
+    title: "State Management agnostic",
+    Svg: require("../../static/img/logo.svg").default,
+    description: (
+      <>
+        Use What ever works for you, queen does not care and it will work same
+        for all of them
+      </>
+    ),
+  },
+  {
+    title: "Support all platforms",
+    Svg: require("../../static/img/logo.svg").default,
+    description: (
+      <>no matter where you are deploying queen will not prevent you</>
+    ),
+  },
+  {
+    title: "LightHouse 💡",
+    Svg: require("../../static/img/logo.svg").default,
+    description: <>it comes with a very CLI to make it even simpler</>,
   },
 ];
 

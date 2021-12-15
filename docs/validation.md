@@ -3,16 +3,6 @@ title: validation
 sidebar_position: 2
 ---
 
-- [variable validation](#variable-validation)
-  - [list of available functions](#list-of-available-functions)
-- [Form validation](#form-validation)
-  - [Validate Forms](#validate-forms)
-  - [list of available Rules](#list-of-available-rules)
-  - [Localize the rule error message](#localize-the-rule-error-message)
-    - [its localized out of the box if you are using nations](#its-localized-out-of-the-box-if-you-are-using-nations)
-    - [override the error message](#override-the-error-message)
-- [notes](#notes)
-
 # variable validation
 
 use a function to validate any variable and it will return a `bool` based on the input
@@ -56,14 +46,8 @@ return TextFormField(
 
 ## Localize the rule error message
 
-### its localized out of the box if you are using nations
+its localized out of the box
 
 ### override the error message
 
-- the recommended way to do so is by overriding the rule key in your `assets/lang` folder
-- or by extending the rule and override the key to whatever you want
-
-# notes
-
-- some rules takes the failure message as optional param like `IsDateMilli`
-- almost 99% of the rules has a function to validate the variables and have a rules for forms
+copy the key and override it in any language you want under the package name 'validation'

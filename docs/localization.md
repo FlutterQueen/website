@@ -3,30 +3,13 @@ title: localization
 sidebar_position: 1
 ---
 
-- [Introduction](#introduction)
-- [translation](#translation)
-  - [String](#string)
-  - [Gender](#gender)
-  - [Arguments](#arguments)
-  - [Pluralization](#pluralization)
-  - [numbers](#numbers)
-- [Translation Loaders](#translation-loaders)
-- [Configuration](#configuration)
-    - [`loaders`](#loaders)
-    - [`fallbackLocale`](#fallbacklocale)
-    - [`baseLoader`](#baseloader)
-    - [`supportedLocales`](#supportedlocales)
-    - [`notFoundBuilder`](#notfoundbuilder)
-    - [`defaultGender`](#defaultgender)
-- [Packages localization](#packages-localization)
-  - [localize your Package](#localize-your-package)
-  - [use package localization](#use-package-localization)
-  - [override package localization](#override-package-localization)
-- [Helpers](#helpers)
+## Introduction
 
-# Introduction
+Queen support localization out of the box with almost any localization feature you will need .
 
-Queen support localization out of the box with almost any features you will need in your app it will be ready
+Queen also comes with bre built translation in top the languages(Arabic,English,Spanish) yet more are coming soon,
+
+## Config
 
 set your assets in `assets/lang` and name the file in the language name or code or both
 
@@ -38,17 +21,7 @@ set your assets in `assets/lang` and name the file in the language name or code 
         /es.json
 ```
 
-- and make sure to call `Nations.boot()` before using `runApp()`
-- wrap your app in `NationsBuilder`
-
-  ```dart
-       runApp(
-             NationsBuilder( builder: (ctx) => const MaterialApp(),
-             ),
-  );
-  ```
-
-# translation
+# translations
 
 ## String
 
@@ -98,7 +71,7 @@ wil convert numbers to the current locale format
 # Translation Loaders
 
 by default nations load assets from `assets/lang` and it is the recommended way to do so,
-but you can also load assets from anywhere you want maybe `API` or `Database` or any data Source
+but you can also load assets from anywhere you want maybe `API` or `Database` or any data Source look below to know how to use custom loader
 
 by extending `NationsLoader` class and impalement your own `load(Locale locale)` function
 then set these loader as baseLoader in your config file
@@ -107,6 +80,10 @@ then set these loader as baseLoader in your config file
 
 in `lib/config/lang.dart` you can configure your project with a child of `NationsConfig` class
 and pass it to nations when booting to use your configuration
+
+```dart
+FlutterQueen.boot(langConfig:AppLangConfig());
+```
 
 ### `loaders`
 
@@ -152,9 +129,15 @@ by default its a `Gender.male`
 
 - add the package loader to `loader` list in `lib/config/lang.dart` file
 
-## override package localization
+## override localization
 
-in `assets/lang/${lang}.json` add the the keys you want to override under the package name
+### override the pre built assets
+
+in `assets/lang/${lang}.json` add the the keys you want to override and queen will use the new value from your assets
+
+### override a package
+
+same as above but add the key inside the package name
 
 example :
 
@@ -163,8 +146,6 @@ example :
    "some_key" :"new value for this key"
 }
 ```
-
-and thats is 😅
 
 # Helpers
 
