@@ -52,7 +52,12 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "docs",
+          },
+          {
+            href: "https://t.me/flutter_q_news",
+            label: "news",
+            position: "right",
           },
           {
             href: "https://github.com/FlutterQueen",
@@ -80,6 +85,10 @@ const config = {
               {
                 label: "Stack Overflow",
                 href: "https://stackoverflow.com/questions/tagged/queen",
+              },
+              {
+                label: "telegram",
+                href: "https://t.me/+nAL_a-i78Oc1NDg0",
               },
             ],
           },
