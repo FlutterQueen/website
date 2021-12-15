@@ -6,14 +6,16 @@ const FeatureList = [
   {
     title: "Easy to Use",
     Svg: require("../../static/img/logo.svg").default,
-    description: <>Designed to make app development simpler,easier, faster </>,
+    description: (
+      <>Designed to make app development simpler , easier , faster </>
+    ),
   },
   {
     title: "Focus on What Matters",
     Svg: require("../../static/img/logo.svg").default,
     description: (
       <>
-        lets you focus on Your app requirements and on business logic more not
+        lets you focus on Your app requirements and business logic more not on
         the redundant features
       </>
     ),
@@ -23,31 +25,25 @@ const FeatureList = [
     Svg: require("../../static/img/logo.svg").default,
     description: (
       <>
-        under the hood it is just a collection of packages that works together
+        under the hood it is just a collection of packages that works well
+        together
       </>
     ),
   },
   {
     title: "State Management agnostic",
     Svg: require("../../static/img/logo.svg").default,
-    description: (
-      <>
-        Use What ever works for you, queen does not care and it will work same
-        for all of them
-      </>
-    ),
+    description: <>Use What ever works for you, queen will not judge</>,
   },
   {
     title: "Support all platforms",
     Svg: require("../../static/img/logo.svg").default,
-    description: (
-      <>no matter where you are deploying queen will not prevent you</>
-    ),
+    description: <>no matter where you are deploying queen support it</>,
   },
   {
     title: "LightHouse 💡",
     Svg: require("../../static/img/logo.svg").default,
-    description: <>it comes with a very CLI to make it even simpler</>,
+    description: <>it comes with a very simple `CLI` to make it even simpler</>,
   },
 ];
 
