@@ -118,6 +118,6 @@ final print([].minOrNull());//null
 Returns the minimum value in the list if list empty throw  StateError.
 ```dart
 final items =[6,3,3];
-final total = items.minOrThrow();//3
+final total = items.minOrThrow(); //3
 final print([].minOrThrow());//StateError
 ```
