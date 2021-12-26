@@ -86,3 +86,17 @@ readable is part of queen you already have readable ready out of the box in any 
 ```dart
 import 'package:queen/queen.dart`;
 ```
+
+Example ::
+
+```dart
+Widget build(BuildContext context){
+  /// replace the shortcut with any from below
+  final result = context.shortcut;
+  /// not just `BuildContext` you can use it with any other data type
+  final numbers = [1,2,3,4,5];
+
+  final average = numbers.average(); // 3
+
+ }
+```
